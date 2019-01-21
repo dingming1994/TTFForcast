@@ -1,0 +1,3 @@
+DEBUG 2018-01-12 19:42:55,714  3488ms BATS                   GetNewTDSRecords   - Getting data from 3/11/2017 5:00:00 AM to 12/1/2018 7:42:55 PM
+DEBUG 2018-02-13 15:38:14,785 2621014ms BATS                   GetNewTDSRecords   - Getting data from 3/11/2017 5:00:00 AM to 13/2/2018 3:38:14 PM
+DEBUG 2019-01-04 11:01:21,151 1656443ms BATS                   GetNewTDSRecords   - Getting data from 3/11/2017 5:00:00 AM to 4/1/2019 11:01:21 AM

@@ -1,0 +1,833 @@
+DEBUG 2015-10-04 09:30:40,225 2159496ms TTF                    SendMessages       -  Error sending data to SQS A WebException with status ProxyNameResolutionFailure was thrown.
+Amazon.Runtime.AmazonServiceException: A WebException with status ProxyNameResolutionFailure was thrown. ---> System.Net.WebException: The proxy name could not be resolved: 'hqpr1.smrt.com.sg'
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Amazon.Runtime.Internal.HttpRequest.GetRequestContent()
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ValidationResponseHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.WebExceptionHandler.HandleException(IExecutionContext executionContext, WebException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.Handle(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessException(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointResolver.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ProcessRequestHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Marshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RuntimePipeline.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.AmazonServiceClient.Invoke[TRequest,TResponse](TRequest request, IMarshaller`2 marshaller, ResponseUnmarshaller unmarshaller)
+   at Amazon.SQS.AmazonSQSClient.SendMessage(SendMessageRequest request)
+   at TTF.DataLayer.ForecastManagementDL.SendMessages(List`1 messages) in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1713
+DEBUG 2015-10-04 09:30:40,262 2159533ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,268 2159539ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,272 2159543ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,276 2159547ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,280 2159551ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,284 2159555ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,288 2159559ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,292 2159563ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,296 2159567ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,300 2159571ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,304 2159575ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,312 2159583ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,317 2159588ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,321 2159592ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,327 2159597ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,331 2159601ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,335 2159605ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,340 2159610ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,344 2159614ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,349 2159619ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,353 2159623ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,353 2159623ms TTF                    ForecastForSending - Sending 21 messages
+DEBUG 2015-10-04 09:30:40,354 2159624ms TTF                    SendMessages       - Sending message: 
+[{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T08:33:52","PlannedST":42380,"Bound":"EAST","Platform":"PSR2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T08:44:33","PlannedST":42504,"Bound":"WEST","Platform":"TAM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T08:46:48","PlannedST":42506,"Bound":"WEST","Platform":"SIM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T08:50:12","PlannedST":42508,"Bound":"WEST","Platform":"TNM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T08:53:13","PlannedST":42510,"Bound":"WEST","Platform":"BDK2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T08:56:03","PlannedST":42512,"Bound":"WEST","Platform":"KEM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T08:57:53","PlannedST":42514,"Bound":"WEST","Platform":"EUN2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T08:59:52","PlannedST":42516,"Bound":"WEST","Platform":"PYL2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:01:57","PlannedST":42518,"Bound":"WEST","Platform":"ALJ2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:04:14","PlannedST":42520,"Bound":"WEST","Platform":"KAL2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:06:11","PlannedST":42522,"Bound":"WEST","Platform":"LVR2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:08:36","PlannedST":42524,"Bound":"WEST","Platform":"BGS2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:10:41","PlannedST":42526,"Bound":"WEST","Platform":"CTH2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:12:49","PlannedST":42528,"Bound":"WEST","Platform":"RFP3"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:15:02","PlannedST":42530,"Bound":"WEST","Platform":"TPG2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:16:57","PlannedST":42532,"Bound":"WEST","Platform":"OTP2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:19:57","PlannedST":42534,"Bound":"WEST","Platform":"TIB2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:22:05","PlannedST":42536,"Bound":"WEST","Platform":"RDH2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:24:22","PlannedST":42538,"Bound":"WEST","Platform":"QUE2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:26:25","PlannedST":42540,"Bound":"WEST","Platform":"COM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:28:25","PlannedST":42542,"Bound":"WEST","Platform":"BNV2"}}]
+DEBUG 2015-10-04 09:30:40,449 2159719ms TTF                    SendMessages       -  Error sending data to SQS A WebException with status ProxyNameResolutionFailure was thrown.
+Amazon.Runtime.AmazonServiceException: A WebException with status ProxyNameResolutionFailure was thrown. ---> System.Net.WebException: The proxy name could not be resolved: 'hqpr1.smrt.com.sg'
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Amazon.Runtime.Internal.HttpRequest.GetRequestContent()
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ValidationResponseHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.WebExceptionHandler.HandleException(IExecutionContext executionContext, WebException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.Handle(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessException(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointResolver.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ProcessRequestHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Marshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RuntimePipeline.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.AmazonServiceClient.Invoke[TRequest,TResponse](TRequest request, IMarshaller`2 marshaller, ResponseUnmarshaller unmarshaller)
+   at Amazon.SQS.AmazonSQSClient.SendMessage(SendMessageRequest request)
+   at TTF.DataLayer.ForecastManagementDL.SendMessages(List`1 messages) in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1713
+DEBUG 2015-10-04 09:30:40,456 2159726ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,460 2159730ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,465 2159735ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,470 2159740ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,476 2159746ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,481 2159751ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,486 2159756ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,491 2159761ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,500 2159771ms TTF                    ForecastForSending - Queueing forecast for sending
+ERROR 2015-10-04 09:30:40,522 2159793ms TTF                    ProcessASignal     - Receving A signal: A,2015-09-15 08:03:57, 243,+000048,NOV1,NB,ARR,N567
+DEBUG 2015-10-04 09:30:40,626 2159897ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,632 2159903ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,637 2159908ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,643 2159914ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,647 2159918ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,653 2159924ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,660 2159931ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,665 2159936ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,670 2159941ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,674 2159945ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,679 2159950ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,684 2159955ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,685 2159956ms TTF                    ForecastForSending - Sending 21 messages
+DEBUG 2015-10-04 09:30:40,686 2159957ms TTF                    SendMessages       - Sending message: 
+[{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:30:41","PlannedST":42544,"Bound":"WEST","Platform":"DVR2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:32:55","PlannedST":42546,"Bound":"WEST","Platform":"CLE2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:37:52","PlannedST":42548,"Bound":"WEST","Platform":"JUR2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:41:07","PlannedST":42550,"Bound":"WEST","Platform":"CNG2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:43:15","PlannedST":42552,"Bound":"WEST","Platform":"LKS2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:46:14","PlannedST":42554,"Bound":"WEST","Platform":"BNL2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:48:07","PlannedST":42556,"Bound":"WEST","Platform":"PNR2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T09:52:02","PlannedST":42558,"Bound":"WEST","Platform":"JKN2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"127","EmuNo":"02190220","Time":"2015-09-15T10:01:40","PlannedST":42382,"Bound":"EAST","Platform":"PNR1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"243","EmuNo":"00030004","Time":"2015-09-15T08:06:38","PlannedST":22566,"Bound":"NORTH","Platform":"TAP1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"243","EmuNo":"00030004","Time":"2015-09-15T08:08:30","PlannedST":22568,"Bound":"NORTH","Platform":"BDL1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"243","EmuNo":"00030004","Time":"2015-09-15T08:10:58","PlannedST":22570,"Bound":"NORTH","Platform":"BSH1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"243","EmuNo":"00030004","Time":"2015-09-15T08:15:00","PlannedST":22572,"Bound":"NORTH","Platform":"AMK1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"243","EmuNo":"00030004","Time":"2015-09-15T08:18:16","PlannedST":22574,"Bound":"NORTH","Platform":"YCK1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"243","EmuNo":"00030004","Time":"2015-09-15T08:23:24","PlannedST":22576,"Bound":"NORTH","Platform":"KTB1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"243","EmuNo":"00030004","Time":"2015-09-15T08:25:30","PlannedST":22578,"Bound":"NORTH","Platform":"YIS1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"243","EmuNo":"00030004","Time":"2015-09-15T08:29:20","PlannedST":22580,"Bound":"NORTH","Platform":"SBW1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"243","EmuNo":"00030004","Time":"2015-09-15T08:32:34","PlannedST":22582,"Bound":"NORTH","Platform":"ADM1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"243","EmuNo":"00030004","Time":"2015-09-15T08:36:36","PlannedST":22584,"Bound":"NORTH","Platform":"WDL1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"243","EmuNo":"00030004","Time":"2015-09-15T08:40:03","PlannedST":22586,"Bound":"NORTH","Platform":"MSL1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"243","EmuNo":"00030004","Time":"2015-09-15T08:43:23","PlannedST":22588,"Bound":"NORTH","Platform":"KRJ1"}}]
+DEBUG 2015-10-04 09:30:40,794 2160065ms TTF                    SendMessages       -  Error sending data to SQS A WebException with status ProxyNameResolutionFailure was thrown.
+Amazon.Runtime.AmazonServiceException: A WebException with status ProxyNameResolutionFailure was thrown. ---> System.Net.WebException: The proxy name could not be resolved: 'hqpr1.smrt.com.sg'
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Amazon.Runtime.Internal.HttpRequest.GetRequestContent()
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ValidationResponseHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.WebExceptionHandler.HandleException(IExecutionContext executionContext, WebException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.Handle(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessException(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointResolver.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ProcessRequestHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Marshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RuntimePipeline.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.AmazonServiceClient.Invoke[TRequest,TResponse](TRequest request, IMarshaller`2 marshaller, ResponseUnmarshaller unmarshaller)
+   at Amazon.SQS.AmazonSQSClient.SendMessage(SendMessageRequest request)
+   at TTF.DataLayer.ForecastManagementDL.SendMessages(List`1 messages) in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1713
+DEBUG 2015-10-04 09:30:40,799 2160070ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,803 2160074ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,809 2160080ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,813 2160084ms TTF                    ForecastForSending - Queueing forecast for sending
+ERROR 2015-10-04 09:30:40,841 2160112ms TTF                    ProcessASignal     - Receving A signal: A,2015-09-15 08:03:58, 123,+000250,BDK1,EB,ARR,E637
+DEBUG 2015-10-04 09:30:40,953 2160224ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,958 2160229ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,964 2160235ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,971 2160242ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,975 2160246ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,980 2160251ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,985 2160256ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,990 2160261ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:40,996 2160267ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,001 2160272ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,005 2160276ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,009 2160280ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,013 2160284ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,019 2160290ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,023 2160294ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,027 2160298ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,031 2160302ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,031 2160302ms TTF                    ForecastForSending - Sending 21 messages
+DEBUG 2015-10-04 09:30:41,032 2160303ms TTF                    SendMessages       - Sending message: 
+[{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"243","EmuNo":"00030004","Time":"2015-09-15T08:46:58","PlannedST":22590,"Bound":"NORTH","Platform":"YWT1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"243","EmuNo":"00030004","Time":"2015-09-15T08:53:14","PlannedST":22592,"Bound":"NORTH","Platform":"CCK1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"243","EmuNo":"00030004","Time":"2015-09-15T08:56:57","PlannedST":22594,"Bound":"NORTH","Platform":"BGB1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"243","EmuNo":"00030004","Time":"2015-09-15T09:02:17","PlannedST":22596,"Bound":"NORTH","Platform":"BBT1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:07:44","PlannedST":39138,"Bound":"EAST","Platform":"TNM1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:12:24","PlannedST":39140,"Bound":"EAST","Platform":"SIM1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:14:52","PlannedST":39142,"Bound":"EAST","Platform":"TAM1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:18:40","PlannedST":39144,"Bound":"EAST","Platform":"PSR2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:24:30","PlannedST":39534,"Bound":"WEST","Platform":"TAM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:26:26","PlannedST":39536,"Bound":"WEST","Platform":"SIM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:31:04","PlannedST":39538,"Bound":"WEST","Platform":"TNM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:32:06","PlannedST":39540,"Bound":"WEST","Platform":"BDK2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:34:56","PlannedST":39542,"Bound":"WEST","Platform":"KEM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:36:46","PlannedST":39544,"Bound":"WEST","Platform":"EUN2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:38:45","PlannedST":39546,"Bound":"WEST","Platform":"PYL2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:40:50","PlannedST":39548,"Bound":"WEST","Platform":"ALJ2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:43:07","PlannedST":39550,"Bound":"WEST","Platform":"KAL2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:45:03","PlannedST":39552,"Bound":"WEST","Platform":"LVR2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:47:28","PlannedST":39554,"Bound":"WEST","Platform":"BGS2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:49:31","PlannedST":39556,"Bound":"WEST","Platform":"CTH2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:51:42","PlannedST":39558,"Bound":"WEST","Platform":"RFP3"}}]
+DEBUG 2015-10-04 09:30:41,125 2160396ms TTF                    SendMessages       -  Error sending data to SQS A WebException with status ProxyNameResolutionFailure was thrown.
+Amazon.Runtime.AmazonServiceException: A WebException with status ProxyNameResolutionFailure was thrown. ---> System.Net.WebException: The proxy name could not be resolved: 'hqpr1.smrt.com.sg'
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Amazon.Runtime.Internal.HttpRequest.GetRequestContent()
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ValidationResponseHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.WebExceptionHandler.HandleException(IExecutionContext executionContext, WebException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.Handle(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessException(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointResolver.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ProcessRequestHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Marshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RuntimePipeline.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.AmazonServiceClient.Invoke[TRequest,TResponse](TRequest request, IMarshaller`2 marshaller, ResponseUnmarshaller unmarshaller)
+   at Amazon.SQS.AmazonSQSClient.SendMessage(SendMessageRequest request)
+   at TTF.DataLayer.ForecastManagementDL.SendMessages(List`1 messages) in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1713
+DEBUG 2015-10-04 09:30:41,130 2160401ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,137 2160408ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,143 2160414ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,147 2160418ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,151 2160422ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,156 2160427ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,164 2160435ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,168 2160439ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,172 2160443ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,179 2160450ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,184 2160455ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,189 2160460ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,193 2160464ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,199 2160470ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,203 2160474ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,214 2160485ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,220 2160491ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,225 2160496ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,230 2160501ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,235 2160506ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,240 2160511ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,240 2160511ms TTF                    ForecastForSending - Sending 21 messages
+DEBUG 2015-10-04 09:30:41,240 2160511ms TTF                    SendMessages       - Sending message: 
+[{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:53:59","PlannedST":39560,"Bound":"WEST","Platform":"TPG2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:55:51","PlannedST":39562,"Bound":"WEST","Platform":"OTP2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T08:59:08","PlannedST":39564,"Bound":"WEST","Platform":"TIB2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:01:16","PlannedST":39566,"Bound":"WEST","Platform":"RDH2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:03:33","PlannedST":39568,"Bound":"WEST","Platform":"QUE2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:05:36","PlannedST":39570,"Bound":"WEST","Platform":"COM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:07:36","PlannedST":39572,"Bound":"WEST","Platform":"BNV2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:09:52","PlannedST":39574,"Bound":"WEST","Platform":"DVR2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:12:15","PlannedST":39576,"Bound":"WEST","Platform":"CLE2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:17:12","PlannedST":39578,"Bound":"WEST","Platform":"JUR2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:20:29","PlannedST":39580,"Bound":"WEST","Platform":"CNG2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:22:37","PlannedST":39582,"Bound":"WEST","Platform":"LKS2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:25:42","PlannedST":39584,"Bound":"WEST","Platform":"BNL2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:27:34","PlannedST":39586,"Bound":"WEST","Platform":"PNR2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:30:52","PlannedST":39588,"Bound":"WEST","Platform":"JKN2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:40:30","PlannedST":39146,"Bound":"EAST","Platform":"PNR1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:42:26","PlannedST":39148,"Bound":"EAST","Platform":"BNL1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:45:56","PlannedST":39150,"Bound":"EAST","Platform":"LKS1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:48:18","PlannedST":39152,"Bound":"EAST","Platform":"CNG1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:50:49","PlannedST":39154,"Bound":"EAST","Platform":"JUR1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:56:19","PlannedST":39156,"Bound":"EAST","Platform":"CLE1"}}]
+DEBUG 2015-10-04 09:30:41,344 2160615ms TTF                    SendMessages       -  Error sending data to SQS A WebException with status ProxyNameResolutionFailure was thrown.
+Amazon.Runtime.AmazonServiceException: A WebException with status ProxyNameResolutionFailure was thrown. ---> System.Net.WebException: The proxy name could not be resolved: 'hqpr1.smrt.com.sg'
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Amazon.Runtime.Internal.HttpRequest.GetRequestContent()
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ValidationResponseHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.WebExceptionHandler.HandleException(IExecutionContext executionContext, WebException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.Handle(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessException(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointResolver.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ProcessRequestHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Marshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RuntimePipeline.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.AmazonServiceClient.Invoke[TRequest,TResponse](TRequest request, IMarshaller`2 marshaller, ResponseUnmarshaller unmarshaller)
+   at Amazon.SQS.AmazonSQSClient.SendMessage(SendMessageRequest request)
+   at TTF.DataLayer.ForecastManagementDL.SendMessages(List`1 messages) in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1713
+DEBUG 2015-10-04 09:30:41,350 2160621ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,355 2160626ms TTF                    ForecastForSending - Queueing forecast for sending
+ERROR 2015-10-04 09:30:41,382 2160652ms TTF                    ProcessASignal     - Receving A signal: A,2015-09-15 08:03:58, 131,+000246,BNV1,EB,ARR,W623
+DEBUG 2015-10-04 09:30:41,489 2160759ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,494 2160764ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,498 2160768ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,503 2160773ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,509 2160779ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,513 2160783ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,519 2160789ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,523 2160793ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,528 2160798ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,531 2160801ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,536 2160807ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,539 2160810ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,546 2160817ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,551 2160822ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,554 2160825ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,559 2160830ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,562 2160833ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,566 2160837ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,570 2160841ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,571 2160842ms TTF                    ForecastForSending - Sending 21 messages
+DEBUG 2015-10-04 09:30:41,572 2160843ms TTF                    SendMessages       - Sending message: 
+[{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T09:58:46","PlannedST":39158,"Bound":"EAST","Platform":"DVR1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"123","EmuNo":"00410042","Time":"2015-09-15T10:00:53","PlannedST":39160,"Bound":"EAST","Platform":"BNV1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:06:42","PlannedST":44448,"Bound":"EAST","Platform":"COM1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:08:46","PlannedST":44450,"Bound":"EAST","Platform":"QUE1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:10:46","PlannedST":44452,"Bound":"EAST","Platform":"RDH1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:12:56","PlannedST":44454,"Bound":"EAST","Platform":"TIB1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:15:16","PlannedST":44456,"Bound":"EAST","Platform":"OTP1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:17:30","PlannedST":44458,"Bound":"EAST","Platform":"TPG1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:19:56","PlannedST":44460,"Bound":"EAST","Platform":"RFP1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:22:32","PlannedST":44462,"Bound":"EAST","Platform":"CTH4"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:24:22","PlannedST":44464,"Bound":"EAST","Platform":"BGS1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:26:15","PlannedST":44466,"Bound":"EAST","Platform":"LVR1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:28:05","PlannedST":44468,"Bound":"EAST","Platform":"KAL1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:30:13","PlannedST":44470,"Bound":"EAST","Platform":"ALJ1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:32:06","PlannedST":44472,"Bound":"EAST","Platform":"PYL1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:33:58","PlannedST":44474,"Bound":"EAST","Platform":"EUN1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:35:50","PlannedST":44476,"Bound":"EAST","Platform":"KEM1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:38:20","PlannedST":44478,"Bound":"EAST","Platform":"BDK1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:40:53","PlannedST":44480,"Bound":"EAST","Platform":"TNM1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:45:14","PlannedST":44482,"Bound":"EAST","Platform":"SIM1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:47:50","PlannedST":44484,"Bound":"EAST","Platform":"TAM1"}}]
+DEBUG 2015-10-04 09:30:41,669 2160940ms TTF                    SendMessages       -  Error sending data to SQS A WebException with status ProxyNameResolutionFailure was thrown.
+Amazon.Runtime.AmazonServiceException: A WebException with status ProxyNameResolutionFailure was thrown. ---> System.Net.WebException: The proxy name could not be resolved: 'hqpr1.smrt.com.sg'
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Amazon.Runtime.Internal.HttpRequest.GetRequestContent()
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ValidationResponseHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.WebExceptionHandler.HandleException(IExecutionContext executionContext, WebException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.Handle(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessException(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointResolver.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ProcessRequestHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Marshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RuntimePipeline.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.AmazonServiceClient.Invoke[TRequest,TResponse](TRequest request, IMarshaller`2 marshaller, ResponseUnmarshaller unmarshaller)
+   at Amazon.SQS.AmazonSQSClient.SendMessage(SendMessageRequest request)
+   at TTF.DataLayer.ForecastManagementDL.SendMessages(List`1 messages) in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1713
+DEBUG 2015-10-04 09:30:41,674 2160945ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,678 2160949ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,683 2160954ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,695 2160966ms TTF                    ForecastForSending - Queueing forecast for sending
+ERROR 2015-10-04 09:30:41,725 2160996ms TTF                    ProcessASignal     - Receving A signal: A,2015-09-15 08:03:58, 141,+000242,CNG2,WB,DEP,W772
+ERROR 2015-10-04 09:30:41,764 2161035ms TTF                    ProcessASignal     - Receving A signal: A,2015-09-15 08:05:23, 230,+000004,TAP2,SB,DEP,N586
+ERROR 2015-10-04 09:30:41,808 2161079ms TTF                    ProcessASignal     - Receving A signal: A,2015-09-15 08:05:23, 101,+000020,TNM3,EB,DEP,E691
+ERROR 2015-10-04 09:30:41,891 2161162ms TTF                    ProcessASignal     - Receving A signal: A,2015-09-15 08:05:23, 169,+000314,TNM1,EB,ARR,E663
+DEBUG 2015-10-04 09:30:41,993 2161264ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:41,997 2161268ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,003 2161274ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,008 2161279ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,012 2161283ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,018 2161289ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,023 2161294ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,028 2161299ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,033 2161304ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,037 2161308ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,041 2161312ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,045 2161316ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,049 2161320ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,053 2161324ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,057 2161328ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,061 2161332ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,065 2161336ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,066 2161337ms TTF                    ForecastForSending - Sending 21 messages
+DEBUG 2015-10-04 09:30:42,066 2161337ms TTF                    SendMessages       - Sending message: 
+[{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T08:52:35","PlannedST":44486,"Bound":"EAST","Platform":"PSR2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T09:03:16","PlannedST":44610,"Bound":"WEST","Platform":"TAM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T09:05:38","PlannedST":44612,"Bound":"WEST","Platform":"SIM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"131","EmuNo":"00050006","Time":"2015-09-15T09:09:26","PlannedST":44614,"Bound":"WEST","Platform":"TNM4"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:08:30","PlannedST":65466,"Bound":"EAST","Platform":"SIM1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:10:58","PlannedST":65468,"Bound":"EAST","Platform":"TAM1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:14:46","PlannedST":65470,"Bound":"EAST","Platform":"PSR2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:20:36","PlannedST":65644,"Bound":"WEST","Platform":"TAM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:22:32","PlannedST":65646,"Bound":"WEST","Platform":"SIM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:27:10","PlannedST":65648,"Bound":"WEST","Platform":"TNM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:28:12","PlannedST":65650,"Bound":"WEST","Platform":"BDK2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:31:02","PlannedST":65652,"Bound":"WEST","Platform":"KEM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:33:02","PlannedST":65654,"Bound":"WEST","Platform":"EUN2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:35:01","PlannedST":65656,"Bound":"WEST","Platform":"PYL2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:37:06","PlannedST":65658,"Bound":"WEST","Platform":"ALJ2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:39:23","PlannedST":65660,"Bound":"WEST","Platform":"KAL2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:41:19","PlannedST":65662,"Bound":"WEST","Platform":"LVR2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:43:44","PlannedST":65664,"Bound":"WEST","Platform":"BGS2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:45:47","PlannedST":65666,"Bound":"WEST","Platform":"CTH2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:47:58","PlannedST":65668,"Bound":"WEST","Platform":"RFP3"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:50:15","PlannedST":65670,"Bound":"WEST","Platform":"TPG2"}}]
+DEBUG 2015-10-04 09:30:42,168 2161439ms TTF                    SendMessages       -  Error sending data to SQS A WebException with status ProxyNameResolutionFailure was thrown.
+Amazon.Runtime.AmazonServiceException: A WebException with status ProxyNameResolutionFailure was thrown. ---> System.Net.WebException: The proxy name could not be resolved: 'hqpr1.smrt.com.sg'
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Amazon.Runtime.Internal.HttpRequest.GetRequestContent()
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ValidationResponseHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.WebExceptionHandler.HandleException(IExecutionContext executionContext, WebException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.Handle(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessException(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointResolver.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ProcessRequestHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Marshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RuntimePipeline.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.AmazonServiceClient.Invoke[TRequest,TResponse](TRequest request, IMarshaller`2 marshaller, ResponseUnmarshaller unmarshaller)
+   at Amazon.SQS.AmazonSQSClient.SendMessage(SendMessageRequest request)
+   at TTF.DataLayer.ForecastManagementDL.SendMessages(List`1 messages) in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1713
+DEBUG 2015-10-04 09:30:42,172 2161443ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,176 2161447ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,180 2161451ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,187 2161458ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,191 2161462ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,195 2161466ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,201 2161472ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,206 2161477ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,210 2161481ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,214 2161485ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,219 2161490ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,223 2161494ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,228 2161499ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,234 2161505ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,238 2161509ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,243 2161514ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,247 2161518ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,253 2161524ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,258 2161529ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,263 2161534ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,268 2161539ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,268 2161539ms TTF                    ForecastForSending - Sending 21 messages
+DEBUG 2015-10-04 09:30:42,269 2161540ms TTF                    SendMessages       - Sending message: 
+[{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:52:07","PlannedST":65672,"Bound":"WEST","Platform":"OTP2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:55:24","PlannedST":65674,"Bound":"WEST","Platform":"TIB2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:57:32","PlannedST":65676,"Bound":"WEST","Platform":"RDH2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T08:59:46","PlannedST":65678,"Bound":"WEST","Platform":"QUE2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:02:02","PlannedST":65680,"Bound":"WEST","Platform":"COM2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:04:02","PlannedST":65682,"Bound":"WEST","Platform":"BNV2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:06:18","PlannedST":65684,"Bound":"WEST","Platform":"DVR2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:08:41","PlannedST":65686,"Bound":"WEST","Platform":"CLE2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:13:38","PlannedST":65688,"Bound":"WEST","Platform":"JUR2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:16:55","PlannedST":65690,"Bound":"WEST","Platform":"CNG2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:19:03","PlannedST":65692,"Bound":"WEST","Platform":"LKS2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:22:08","PlannedST":65694,"Bound":"WEST","Platform":"BNL2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:24:00","PlannedST":65696,"Bound":"WEST","Platform":"PNR2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:27:18","PlannedST":65698,"Bound":"WEST","Platform":"JKN2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:36:54","PlannedST":65472,"Bound":"EAST","Platform":"PNR1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:38:50","PlannedST":65474,"Bound":"EAST","Platform":"BNL1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:42:20","PlannedST":65476,"Bound":"EAST","Platform":"LKS1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:44:42","PlannedST":65478,"Bound":"EAST","Platform":"CNG1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:47:13","PlannedST":65480,"Bound":"EAST","Platform":"JUR1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:52:43","PlannedST":65482,"Bound":"EAST","Platform":"CLE1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:55:10","PlannedST":65484,"Bound":"EAST","Platform":"DVR1"}}]
+DEBUG 2015-10-04 09:30:42,368 2161639ms TTF                    SendMessages       -  Error sending data to SQS A WebException with status ProxyNameResolutionFailure was thrown.
+Amazon.Runtime.AmazonServiceException: A WebException with status ProxyNameResolutionFailure was thrown. ---> System.Net.WebException: The proxy name could not be resolved: 'hqpr1.smrt.com.sg'
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Amazon.Runtime.Internal.HttpRequest.GetRequestContent()
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ValidationResponseHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.WebExceptionHandler.HandleException(IExecutionContext executionContext, WebException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.Handle(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessException(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointResolver.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ProcessRequestHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Marshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RuntimePipeline.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.AmazonServiceClient.Invoke[TRequest,TResponse](TRequest request, IMarshaller`2 marshaller, ResponseUnmarshaller unmarshaller)
+   at Amazon.SQS.AmazonSQSClient.SendMessage(SendMessageRequest request)
+   at TTF.DataLayer.ForecastManagementDL.SendMessages(List`1 messages) in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1713
+DEBUG 2015-10-04 09:30:42,373 2161644ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,378 2161649ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,383 2161654ms TTF                    ForecastForSending - Queueing forecast for sending
+ERROR 2015-10-04 09:30:42,409 2161679ms TTF                    ProcessASignal     - Receving A signal: A,2015-09-15 08:05:23, 137,+000040,PNR1,EB,DEP,W825
+ERROR 2015-10-04 09:30:42,450 2161720ms TTF                    ProcessASignal     - Receving A signal: A,2015-09-15 08:05:23, 112,+000116,CLE2,WB,DEP,W658
+ERROR 2015-10-04 09:30:42,493 2161763ms TTF                    ProcessASignal     - Receving A signal: A,2015-09-15 08:05:23, 221,-000024,MSP1,NB,ARR,S501
+ERROR 2015-10-04 09:30:42,537 2161807ms TTF                    ProcessASignal     - Receving A signal: A,2015-09-15 08:05:23, 113,-000216,TNM2,WB,DEP,E660
+ERROR 2015-10-04 09:30:42,568 2161838ms TTF                    ProcessASignal     - Receving A signal: A,2015-09-15 08:05:23, 244,-000118,YIS2,SB,DEP,N798
+ERROR 2015-10-04 09:30:42,604 2161875ms TTF                    ProcessASignal     - Receving A signal: A,2015-09-15 08:05:23, 139,+000002,BNV2,WB,DEP,W626
+ERROR 2015-10-04 09:30:42,606 2161877ms TTF                    GetEMUNoByTrainNo  - Cannot find EMU number assigned to train number 139
+ERROR 2015-10-04 09:30:42,639 2161910ms TTF                    ProcessASignal     - Receving A signal: A,2015-09-15 08:05:23, 256,-000152,DBG2,SB,ARR,N506
+DEBUG 2015-10-04 09:30:42,777 2162048ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,795 2162066ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,802 2162073ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,816 2162087ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,823 2162094ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,829 2162100ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,834 2162105ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,839 2162110ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,844 2162115ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,848 2162119ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,851 2162122ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,855 2162126ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,860 2162131ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,866 2162137ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,870 2162141ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,874 2162145ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,880 2162151ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,884 2162155ms TTF                    ForecastForSending - Queueing forecast for sending
+DEBUG 2015-10-04 09:30:42,884 2162155ms TTF                    ForecastForSending - Sending 21 messages
+DEBUG 2015-10-04 09:30:42,885 2162156ms TTF                    SendMessages       - Sending message: 
+[{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:57:17","PlannedST":65486,"Bound":"EAST","Platform":"BNV1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T09:59:15","PlannedST":65488,"Bound":"EAST","Platform":"COM1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"169","EmuNo":"05690570","Time":"2015-09-15T10:01:16","PlannedST":65490,"Bound":"EAST","Platform":"QUE1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:06:16","PlannedST":30726,"Bound":"SOUTH","Platform":"CTH3"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:08:18","PlannedST":30728,"Bound":"SOUTH","Platform":"RFP4"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:10:24","PlannedST":30730,"Bound":"SOUTH","Platform":"MRB2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:12:44","PlannedST":30486,"Bound":"NORTH","Platform":"RFP2"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:14:44","PlannedST":30488,"Bound":"NORTH","Platform":"CTH1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:16:32","PlannedST":30490,"Bound":"NORTH","Platform":"DBG1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:18:02","PlannedST":30492,"Bound":"NORTH","Platform":"SOM1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:19:56","PlannedST":30494,"Bound":"NORTH","Platform":"ORC1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:21:56","PlannedST":30496,"Bound":"NORTH","Platform":"NEW1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:24:00","PlannedST":30498,"Bound":"NORTH","Platform":"NOV1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:25:50","PlannedST":30500,"Bound":"NORTH","Platform":"TAP1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:27:55","PlannedST":30502,"Bound":"NORTH","Platform":"BDL1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:29:40","PlannedST":30504,"Bound":"NORTH","Platform":"BSH1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:31:39","PlannedST":30506,"Bound":"NORTH","Platform":"AMK1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:34:47","PlannedST":30508,"Bound":"NORTH","Platform":"YCK1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:37:36","PlannedST":30510,"Bound":"NORTH","Platform":"KTB1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:44:43","PlannedST":30512,"Bound":"NORTH","Platform":"YIS1"}},{"type":"ForecastedTrainArrivalTime","data":{"TrainNo":"256","EmuNo":"01070108","Time":"2015-09-15T08:45:54","PlannedST":30514,"Bound":"NORTH","Platform":"SBW1"}}]
+DEBUG 2015-10-04 09:30:42,980 2162251ms TTF                    SendMessages       -  Error sending data to SQS A WebException with status ProxyNameResolutionFailure was thrown.
+Amazon.Runtime.AmazonServiceException: A WebException with status ProxyNameResolutionFailure was thrown. ---> System.Net.WebException: The proxy name could not be resolved: 'hqpr1.smrt.com.sg'
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Amazon.Runtime.Internal.HttpRequest.GetRequestContent()
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ValidationResponseHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.WebExceptionHandler.HandleException(IExecutionContext executionContext, WebException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.Handle(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessException(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointResolver.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ProcessRequestHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Marshaller.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.PipelineHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RuntimePipeline.InvokeSync(IExecutionContext executionContext)
+   at Amazon.Runtime.AmazonServiceClient.Invoke[TRequest,TResponse](TRequest request, IMarshaller`2 marshaller, ResponseUnmarshaller unmarshaller)
+   at Amazon.SQS.AmazonSQSClient.SendMessage(SendMessageRequest request)
+   at TTF.DataLayer.ForecastManagementDL.SendMessages(List`1 messages) in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1713
+DEBUG 2015-10-04 09:30:42,986 2162257ms TTF                    ForecastForSending - Queueing forecast for sending
+ERROR 2017-12-05 11:15:26,232 366402ms TTF                    InitiateForecast   - Invalid column name 'platformid'.
+Invalid column name 'boundid'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'platformid'.
+Invalid column name 'boundid'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at TTF.DataLayer.ForecastManagementDL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1327
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 131
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ClientConnectionId:2697de85-e117-4a4d-8150-a13c1051d5b7
+Error Number:207,State:1,Class:16
+ERROR 2017-11-02 16:34:43,736 -2831676093ms TTF                    InitiateForecast   - Invalid column name 'platformid'.
+Invalid column name 'boundid'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'platformid'.
+Invalid column name 'boundid'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at TTF.DataLayer.ForecastManagementDL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1327
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 131
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ClientConnectionId:e33f1952-e938-4fed-841d-19474923750f
+Error Number:207,State:1,Class:16
+ERROR 2017-11-02 16:54:52,112 -2830467718ms TTF                    InitiateForecast   - Invalid column name 'platformid'.
+Invalid column name 'boundid'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'platformid'.
+Invalid column name 'boundid'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at TTF.DataLayer.ForecastManagementDL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1327
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 131
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ClientConnectionId:a2fb468a-84a0-4a68-84f4-c6f71dfd93ec
+Error Number:207,State:1,Class:16
+ERROR 2017-11-02 17:01:06,927 -2830092902ms TTF                    InitiateForecast   - Invalid column name 'platformid'.
+Invalid column name 'boundid'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'platformid'.
+Invalid column name 'boundid'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at TTF.DataLayer.ForecastManagementDL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1327
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 131
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ClientConnectionId:a2fb468a-84a0-4a68-84f4-c6f71dfd93ec
+Error Number:207,State:1,Class:16
+ERROR 2017-12-05 17:41:41,548 151723ms TTF                    InitiateForecast   - Invalid column name 'BoundID'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'BoundID'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at TTF.DataLayer.ForecastManagementDL.GenerateTrainNoToBound() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1444
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 134
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ClientConnectionId:f436aeb9-352f-4dca-ab57-d910334a7004
+Error Number:207,State:1,Class:16
+ERROR 2017-12-13 12:36:34,229 39913ms TTF                    InitiateForecast   - Error in initiating travel time with TT: Invalid column name 'id'.
+Invalid column name 'id'.
+System.ApplicationException: Error in initiating travel time with TT: Invalid column name 'id'.
+Invalid column name 'id'.
+   at TTF.DataLayer.ForecastManagementDL.InitiateTravelTimeWithTT() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1428
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 134
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ERROR 2017-12-13 12:37:53,964 119648ms TTF                    InitiateForecast   - Error in initiating travel time with TT: Invalid column name 'id'.
+Invalid column name 'id'.
+System.ApplicationException: Error in initiating travel time with TT: Invalid column name 'id'.
+Invalid column name 'id'.
+   at TTF.DataLayer.ForecastManagementDL.InitiateTravelTimeWithTT() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1428
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 134
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ERROR 2017-12-13 15:13:28,277 9453961ms TTF                    InitiateForecast   - Error in initiating travel time with TT: Invalid column name 'id'.
+Invalid column name 'id'.
+System.ApplicationException: Error in initiating travel time with TT: Invalid column name 'id'.
+Invalid column name 'id'.
+   at TTF.DataLayer.ForecastManagementDL.InitiateTravelTimeWithTT() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1428
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 134
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ERROR 2017-12-13 15:40:35,272 11080956ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-13 16:16:22,683 13228367ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-13 16:31:57,934 14163618ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-13 20:29:19,467 28405151ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-13 20:37:20,244 28885928ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-13 21:07:43,325 30709009ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-13 21:38:53,253 32578937ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-14 10:18:05,264 39424ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-14 10:30:52,002 806162ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-14 11:09:34,126 3128287ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-14 11:33:53,104 4587264ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-14 13:03:34,429 9968590ms TTF                    GenAccuracyReport  - Invalid object name 'ForecastError09'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ForecastError09'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at TTF.DataLayer.ForecastManagementDL.QueryAccuracy(StreamWriter writer) in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1679
+   at TTF.BusinessLogic.ForecastManagementBL.GenerateAccuracyReport() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 631
+   at TTF.WebServices.TTFForecastManagement.GenAccuracyReport() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 78
+ClientConnectionId:476d5eb2-fa70-444c-8f8d-11c78c49db1c
+Error Number:208,State:1,Class:16
+ERROR 2017-12-14 13:53:58,668 53123ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-14 14:50:13,815 3428270ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-14 15:40:17,387 6431842ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-14 15:53:20,421 7214876ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-14 17:09:50,099 195917ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-14 17:09:53,882 199700ms TTF                    InitiateForecast   - Incorrect syntax near the keyword 'OVER'.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'OVER'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at TTF.DataLayer.ForecastManagementDL.CalculateAvg15MinsTravelTime(Int32 dateType) in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1682
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 139
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ClientConnectionId:12e3beb5-0465-443b-9ebe-aadccf0ebac2
+Error Number:156,State:1,Class:15
+ERROR 2017-12-14 17:11:13,385 39591ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-14 17:25:48,779 914985ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-14 18:52:08,916 394696ms TTF                    InitiateForecast   - Unable to calculate historical average travel time: Incorrect syntax near the keyword 'OVER'.
+System.Exception: Unable to calculate historical average travel time: Incorrect syntax near the keyword 'OVER'.
+   at TTF.DataLayer.ForecastManagementDL.CalculateAvg15MinsTravelTime(Int32 dateType) in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1696
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 139
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ERROR 2017-12-14 21:53:30,651 158568ms TTF                    InitiateForecast   - Unable to calculate historical average travel time: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+System.Exception: Unable to calculate historical average travel time: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at TTF.DataLayer.ForecastManagementDL.CalculateAvg15MinsTravelTime(Int32 dateType) in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1762
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 139
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ERROR 2017-12-14 21:57:14,206 382124ms TTF                    InitiateForecast   - Unable to calculate historical average travel time: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+System.Exception: Unable to calculate historical average travel time: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at TTF.DataLayer.ForecastManagementDL.CalculateAvg15MinsTravelTime(Int32 dateType) in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1762
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 139
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ERROR 2017-12-14 22:01:01,291 58924ms TTF                    InitiateForecast   - Unable to calculate historical average travel time: The variable name '@toTime' has already been declared. Variable names must be unique within a query batch or stored procedure.
+Must declare the scalar variable "@toPlat".
+System.Exception: Unable to calculate historical average travel time: The variable name '@toTime' has already been declared. Variable names must be unique within a query batch or stored procedure.
+Must declare the scalar variable "@toPlat".
+   at TTF.DataLayer.ForecastManagementDL.CalculateAvg15MinsTravelTime(Int32 dateType) in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1770
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 139
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ERROR 2017-12-14 22:02:29,756 44881ms TTF                    InitiateForecast   - Unable to calculate historical average travel time: Incorrect syntax near '@travelTime'.
+System.Exception: Unable to calculate historical average travel time: Incorrect syntax near '@travelTime'.
+   at TTF.DataLayer.ForecastManagementDL.CalculateAvg15MinsTravelTime(Int32 dateType) in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1770
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 139
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ERROR 2017-12-14 22:17:46,931 39492ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-14 22:22:51,103 173178ms TTF                    ArchiveData        - Error encountered while archiving operation data Invalid object name 'DailyForecastArrivalTime'.
+ERROR 2017-12-14 22:36:46,789 792152ms TTF                    ArchiveData        - Error encountered while archiving operation data Violation of PRIMARY KEY constraint 'PK_ForecastErrorArchive'. Cannot insert duplicate key in object 'dbo.ForecastErrorArchive'. The duplicate key value is (1, Nov  3 2017 12:00AM).
+The statement has been terminated.
+ERROR 2017-12-14 22:36:48,997 794360ms TTF                    InitiateForecast   - Unable to calculate historical average travel time: Must declare the scalar variable "@dateType".
+System.Exception: Unable to calculate historical average travel time: Must declare the scalar variable "@dateType".
+   at TTF.DataLayer.ForecastManagementDL.CalculateAvg15MinsTravelTime() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1772
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 139
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ERROR 2017-12-14 22:39:23,111 948473ms TTF                    ArchiveData        - Error encountered while archiving operation data Violation of PRIMARY KEY constraint 'PK_ForecastErrorArchive'. Cannot insert duplicate key in object 'dbo.ForecastErrorArchive'. The duplicate key value is (1, Nov  3 2017 12:00AM).
+The statement has been terminated.
+ERROR 2017-12-14 22:39:28,956 954319ms TTF                    InitiateForecast   - Unable to calculate historical average travel time: Must declare the scalar variable "@dateType".
+System.Exception: Unable to calculate historical average travel time: Must declare the scalar variable "@dateType".
+   at TTF.DataLayer.ForecastManagementDL.CalculateAvg15MinsTravelTime() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1772
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 139
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ERROR 2017-12-14 22:42:04,685 1110048ms TTF                    InitiateForecast   - Unable to calculate historical average travel time: Must declare the scalar variable "@dateType".
+System.Exception: Unable to calculate historical average travel time: Must declare the scalar variable "@dateType".
+   at TTF.DataLayer.ForecastManagementDL.CalculateAvg15MinsTravelTime() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\DataLayer\ForecastManagementDL.cs:line 1772
+   at TTF.BusinessLogic.ForecastManagementBL.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\BusinessLogic\ForecastManagementBL.cs:line 139
+   at TTF.WebServices.TTFForecastManagement.InitiateForecast() in C:\TTF\Git\ttf - Testing2\TTF.WebServices\WebServices\TTFForecastManagement.svc.cs:line 42
+ERROR 2017-12-15 10:37:42,832 71798ms TTF                    ArchiveData        - Error encountered while archiving operation data Violation of PRIMARY KEY constraint 'PK_ForecastErrorArchive'. Cannot insert duplicate key in object 'dbo.ForecastErrorArchive'. The duplicate key value is (1, Nov  3 2017 12:00AM).
+The statement has been terminated.
+ERROR 2017-12-15 19:16:03,293 46755ms TTF                    ArchiveData        - Error encountered while archiving operation data Violation of PRIMARY KEY constraint 'PK_ForecastErrorArchive'. Cannot insert duplicate key in object 'dbo.ForecastErrorArchive'. The duplicate key value is (1, Nov  4 2017 12:00AM).
+The statement has been terminated.
+ERROR 2017-12-15 19:20:32,848 316310ms TTF                    ArchiveData        - Error encountered while archiving operation data Violation of PRIMARY KEY constraint 'PK_ForecastErrorArchive'. Cannot insert duplicate key in object 'dbo.ForecastErrorArchive'. The duplicate key value is (1, Nov  4 2017 12:00AM).
+The statement has been terminated.
+ERROR 2017-12-15 19:26:39,196 682658ms TTF                    ArchiveData        - Error encountered while archiving operation data Violation of PRIMARY KEY constraint 'PK_ForecastErrorArchive'. Cannot insert duplicate key in object 'dbo.ForecastErrorArchive'. The duplicate key value is (1, Nov  4 2017 12:00AM).
+The statement has been terminated.
+ERROR 2017-12-15 20:16:00,546 3644009ms TTF                    ArchiveData        - Error encountered while archiving operation data Violation of PRIMARY KEY constraint 'PK_ForecastErrorArchive'. Cannot insert duplicate key in object 'dbo.ForecastErrorArchive'. The duplicate key value is (1, Nov  4 2017 12:00AM).
+The statement has been terminated.
+ERROR 2017-12-16 11:41:19,012 764428ms TTF                    ArchiveData        - Error encountered while archiving operation data Violation of PRIMARY KEY constraint 'PK_ForecastErrorArchive'. Cannot insert duplicate key in object 'dbo.ForecastErrorArchive'. The duplicate key value is (1, Nov  7 2017 12:00AM).
+The statement has been terminated.
+ERROR 2017-12-16 12:27:45,611 3551028ms TTF                    ArchiveData        - Error encountered while archiving operation data Violation of PRIMARY KEY constraint 'PK_ForecastErrorArchive'. Cannot insert duplicate key in object 'dbo.ForecastErrorArchive'. The duplicate key value is (1, Nov  7 2017 12:00AM).
+The statement has been terminated.
+ERROR 2017-12-25 12:55:37,061 117953ms TTF                    ArchiveData        - Error encountered while archiving operation data Violation of PRIMARY KEY constraint 'PK_ForecastErrorArchive'. Cannot insert duplicate key in object 'dbo.ForecastErrorArchive'. The duplicate key value is (1, Nov  8 2017 12:00AM).
+The statement has been terminated.
+DEBUG 2018-01-11 17:45:24,859 32150ms TTF                    InitiateForecast   - Start initialising forecast
+DEBUG 2018-01-11 17:45:25,248 32538ms TTF                    ArchiveData        - Start achiving
+DEBUG 2018-01-11 17:45:27,109 34399ms TTF                    ArchiveData        - Archiving is done
+DEBUG 2018-01-11 17:45:27,118 34408ms TTF                    InitiateForecast   - start initial forecasting
+DEBUG 2018-01-11 17:45:27,634 34924ms TTF                    InitiateForecast   - Finish initial forecasting
+DEBUG 2018-01-11 17:45:27,637 34927ms TTF                    teTravelTimeWithTT - Start calculating intial travel time
+DEBUG 2018-01-11 17:45:28,642 35932ms TTF                    teTravelTimeWithTT - Finish intial travel time calculation
+DEBUG 2018-01-11 17:45:28,743 36033ms TTF                    vg15MinsTravelTime - Start calculating average travel time
+DEBUG 2018-01-11 17:45:28,883 36173ms TTF                    vg15MinsTravelTime - Finish calculating average travel time
+DEBUG 2018-01-12 19:44:51,128 117313ms TTF                    InitiateForecast   - Start initialising forecast
+DEBUG 2018-01-12 19:44:51,186 117371ms TTF                    ArchiveData        - Start achiving
+DEBUG 2018-01-12 19:44:57,600 123785ms TTF                    ArchiveData        - Archiving is done
+DEBUG 2018-01-12 19:44:57,638 123823ms TTF                    InitiateForecast   - start initial forecasting
+DEBUG 2018-01-12 19:44:59,009 125194ms TTF                    InitiateForecast   - Finish initial forecasting
+DEBUG 2018-01-12 19:44:59,010 125195ms TTF                    teTravelTimeWithTT - Start calculating intial travel time
+DEBUG 2018-01-12 19:45:00,492 126677ms TTF                    teTravelTimeWithTT - Finish intial travel time calculation
+DEBUG 2018-01-12 19:45:01,125 127310ms TTF                    vg15MinsTravelTime - Start calculating average travel time
+DEBUG 2018-01-12 19:45:01,929 128114ms TTF                    vg15MinsTravelTime - Finish calculating average travel time

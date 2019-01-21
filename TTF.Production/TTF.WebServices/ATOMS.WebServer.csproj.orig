@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9EB4E08C-B37E-484F-B844-949B64900780}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ATOMS</RootNamespace>
+    <AssemblyName>ATOMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\log4net.dll" />
+    <Content Include="WebServices\ATOMSBasicSettings.svc" />
+    <Content Include="WebServices\ATOMSImportService.asmx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebServices\ATOMSMobile.svc" />
+    <Content Include="WebServices\ATOMSParameterSettings.svc" />
+    <Content Include="WebServices\ATOMSVersionTree.svc" />
+    <Content Include="WebServices\ManpowerPlanning.svc" />
+    <Content Include="WebServices\SocketHelper.svc" />
+    <Content Include="WebTests\DutyScheduleImport.htm" />
+    <Content Include="WebTests\MasterRotaImport.htm" />
+    <Content Include="WebTests\TrainScheduleImport.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLogic\VersionTreeBL.cs" />
+    <Compile Include="BusinessLogic\ParameterSettingsBL.cs" />
+    <Compile Include="BusinessLogic\DutyScheduleImportBL.cs" />
+    <Compile Include="BusinessLogic\NetworkManagementBL.cs" />
+    <Compile Include="BusinessLogic\MasterRotaImportBL.cs" />
+    <Compile Include="BusinessLogic\MobileInterfaceBL.cs" />
+    <Compile Include="BusinessLogic\PlanDataBL.cs" />
+    <Compile Include="BusinessLogic\SocketHelperBL.cs" />
+    <Compile Include="BusinessLogic\TrainCaptainBL.cs" />
+    <Compile Include="BusinessLogic\TrainScheduleImportBL.cs" />
+    <Compile Include="DataLayer\AuthenticationDL.cs" />
+    <Compile Include="DataLayer\VersionTreeDL.cs" />
+    <Compile Include="DataLayer\ParameterSettingsDL.cs" />
+    <Compile Include="DataLayer\DutyScheduleImportDL.cs" />
+    <Compile Include="DataLayer\NetworkManagementDL.cs" />
+    <Compile Include="DataLayer\MasterRotaImportDL.cs" />
+    <Compile Include="DataLayer\MobileInterfaceDL.cs" />
+    <Compile Include="DataLayer\PlanDataDL.cs" />
+    <Compile Include="DataLayer\SocketHelperDL.cs" />
+    <Compile Include="DataLayer\TrainCaptainDL.cs" />
+    <Compile Include="DataLayer\TrainScheduleImportDL.cs" />
+    <Compile Include="Exceptions\MobileAPI\InvalidSessionException.cs" />
+    <Compile Include="Exceptions\MobileAPI\InvalidUsernameOrPasswordException.cs" />
+    <Compile Include="Models\ATSSMappingInfo.cs" />
+    <Compile Include="Models\DataImport\DutyScheduleData.cs">
+      <DependentUpon>DutyScheduleData.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Models\DataImport\MasterRotaData.cs">
+      <DependentUpon>MasterRotaData.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+<<<<<<< HEAD
+    <Compile Include="Models\VersionManagement\VersionTree.cs" />
+=======
+    <Compile Include="Models\VersionTree.cs" />
+>>>>>>> 4400de5cfc33e65c3155126f80aba5c644ed7da0
+    <Compile Include="Models\NetworkManagement\Bound.cs" />
+    <Compile Include="Models\ParameterSettings\SystemLookUp.cs" />
+    <Compile Include="Models\Manpower\CrewpointTeamInfo.cs" />
+    <Compile Include="Models\NetworkManagement\Interchange.cs" />
+    <Compile Include="Models\NetworkManagement\Station.cs" />
+    <Compile Include="Models\MobileAPI\TCAuthToken.cs" />
+    <Compile Include="Models\MobileAPI\TCLoginResponse.cs" />
+    <Compile Include="Models\MobileAPI\TCWorkpiece.cs" />
+    <Compile Include="Models\Manpower\TrainCaptainInfo.cs" />
+    <Compile Include="Models\Manpower\CrewpointTeam.cs" />
+    <Compile Include="Models\Manpower\TrainCaptain.cs" />
+    <Compile Include="Models\PlanTrainStationTime.cs" />
+    <Compile Include="Models\NetworkManagement\Crewpoint.cs" />
+    <Compile Include="Models\DataImport\MasterRotaType.cs" />
+    <Compile Include="Models\RotaEntry.cs" />
+    <Compile Include="Models\Schedule.cs" />
+    <Compile Include="Models\SchedulePiece.cs" />
+    <Compile Include="Models\MobileAPI\TrainCaptainScan.cs" />
+    <Compile Include="Models\MobileAPI\TrainPrepChecklist.cs" />
+    <Compile Include="Models\MobileAPI\TrainPrepChecklistItem.cs" />
+    <Compile Include="Models\MobileAPI\TrainPrepChecklistSection.cs" />
+    <Compile Include="Models\TrainSchedule.cs" />
+    <Compile Include="Models\NetworkManagement\Line.cs" />
+    <Compile Include="Models\DataImport\MasterRotaData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MasterRotaData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Platform.cs" />
+    <Compile Include="Models\DataImport\ImportError.cs" />
+    <Compile Include="Models\DateType.cs" />
+    <Compile Include="Models\DataImport\DutyScheduleData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DutyScheduleData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataImport\TrainScheduleData.cs">
+      <DependentUpon>TrainScheduleData.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Models\DataImport\TrainScheduleData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrainScheduleData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NetworkManagement\Versions.cs" />
+    <Compile Include="Models\Workpiece.cs" />
+    <Compile Include="Utils\Conversion.cs" />
+    <Compile Include="Utils\JSONHelper.cs" />
+    <Compile Include="Utils\Logging.cs" />
+    <Compile Include="WebServices\ATOMSBasicSettings.svc.cs">
+      <DependentUpon>ATOMSBasicSettings.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WebServices\ATOMSImportService.asmx.cs">
+      <DependentUpon>ATOMSImportService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebServices\ATOMSMobile.svc.cs">
+      <DependentUpon>ATOMSMobile.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WebServices\ATOMSParameterSettings.svc.cs">
+      <DependentUpon>ATOMSParameterSettings.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WebServices\ATOMSVersionTree.svc.cs">
+      <DependentUpon>ATOMSVersionTree.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WebServices\IATOMSVersionTree.cs" />
+    <Compile Include="WebServices\IATOMSParameterSettings.cs" />
+    <Compile Include="WebServices\IATOMSBasicSettings.cs" />
+    <Compile Include="WebServices\IATOMSMobile.cs" />
+    <Compile Include="WebServices\IManpowerPlanning.cs" />
+    <Compile Include="WebServices\ISocketHelper.cs" />
+    <Compile Include="WebServices\ManpowerPlanning.svc.cs">
+      <DependentUpon>ManpowerPlanning.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WebServices\SocketHelper.svc.cs">
+      <DependentUpon>SocketHelper.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\DataImport\DutyScheduleData.xsc">
+      <DependentUpon>DutyScheduleData.xsd</DependentUpon>
+    </None>
+    <None Include="Models\DataImport\DutyScheduleData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DutyScheduleData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Models\DataImport\DutyScheduleData.xss">
+      <DependentUpon>DutyScheduleData.xsd</DependentUpon>
+    </None>
+    <None Include="Models\DataImport\MasterRotaData.xsc">
+      <DependentUpon>MasterRotaData.xsd</DependentUpon>
+    </None>
+    <None Include="Models\DataImport\MasterRotaData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MasterRotaData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Models\DataImport\MasterRotaData.xss">
+      <DependentUpon>MasterRotaData.xsd</DependentUpon>
+    </None>
+    <None Include="Models\DataImport\TrainScheduleData.xsc">
+      <DependentUpon>TrainScheduleData.xsd</DependentUpon>
+    </None>
+    <None Include="Models\DataImport\TrainScheduleData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrainScheduleData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Models\DataImport\TrainScheduleData.xss">
+      <DependentUpon>TrainScheduleData.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>49171</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

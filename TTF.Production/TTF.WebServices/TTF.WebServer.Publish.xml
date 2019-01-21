@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\TTF\LiveSite" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Ionic.Zip.dll" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/System.Web.Extensions.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/System.Data.Services.Client.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/NPOI.xml" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/Telerik.Reporting.dll" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="Global.asax" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/Microsoft.CSharp.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/ICSharpCode.SharpZipLib.dll" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/System.Drawing.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/System.Runtime.Serialization.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/System.EnterpriseServices.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/System.Web.ApplicationServices.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/System.Web.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/System.Configuration.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/NPOI.OpenXmlFormats.dll" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/Gma.QrCodeNet.Encoding.Net35.xml" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/System.Web.Services.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/AWSSDK.xml" publishTime="05/07/2015 14:15:04" />
+    <file relUrl="bin/Newtonsoft.Json.xml" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/System.Data.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/Telerik.Web.UI.dll" publishTime="03/26/2015 10:29:37" />
+    <file relUrl="bin/System.ServiceModel.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/System.Xml.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/PushSharp.Core.dll" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/Telerik.ReportViewer.WebForms.dll" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/WebSocket4Net.dll" publishTime="03/26/2015 10:29:37" />
+    <file relUrl="bin/NPOI.OOXML.xml" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="WebServices/TTFForecastManagement.svc" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/System.Web.DynamicData.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/System.Data.Entity.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="lib/log4net.dll" publishTime="03/26/2015 10:29:37" />
+    <file relUrl="bin/Gma.QrCodeNet.Encoding.Net35.dll" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/System.Xml.Linq.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/NPOI.dll" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/Telerik.Web.UI.Skins.dll" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/AWSSDK.dll" publishTime="05/07/2015 14:15:06" />
+    <file relUrl="bin/NPOI.OpenXml4Net.dll" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="Web.config" publishTime="02/22/2018 09:06:30" />
+    <file relUrl="bin/System.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/NPOI.OpenXml4Net.xml" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/System.Data.Services.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/log4net.dll" publishTime="03/26/2015 10:29:37" />
+    <file relUrl="bin/TTF.dll" publishTime="02/22/2018 09:06:22" />
+    <file relUrl="bin/System.ServiceModel.Web.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/System.Data.DataSetExtensions.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/System.DirectoryServices.AccountManagement.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/NPOI.OOXML.dll" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/PushSharp.Apple.dll" publishTime="03/26/2015 10:29:36" />
+    <file relUrl="bin/System.Web.Entity.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="bin/TTF.pdb" publishTime="02/22/2018 09:06:22" />
+  </publishProfile>
+</publishData>

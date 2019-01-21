@@ -1,0 +1,132 @@
+C:\TTF\Git\ttf\TTF.WebServices\obj\Debug\TTF.Properties.Resources.resources
+C:\TTF\Git\ttf\TTF.WebServices\obj\Debug\TTF.WebServer.csproj.GenerateResource.Cache
+C:\TTF\Git\ttf\TTF.WebServices\bin\TTF.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\TTF.pdb
+C:\TTF\Git\ttf\TTF.WebServices\bin\Gma.QrCodeNet.Encoding.Net35.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\ICSharpCode.SharpZipLib.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\Ionic.Zip.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\log4net.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\Newtonsoft.Json.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\NPOI.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\NPOI.OOXML.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\NPOI.OpenXml4Net.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\PushSharp.Apple.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\PushSharp.Core.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\Telerik.Reporting.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\Telerik.ReportViewer.WebForms.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\Telerik.Web.UI.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\Telerik.Web.UI.Skins.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\WebSocket4Net.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\NPOI.OpenXmlFormats.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\Gma.QrCodeNet.Encoding.Net35.xml
+C:\TTF\Git\ttf\TTF.WebServices\bin\Newtonsoft.Json.xml
+C:\TTF\Git\ttf\TTF.WebServices\bin\NPOI.xml
+C:\TTF\Git\ttf\TTF.WebServices\bin\NPOI.OOXML.xml
+C:\TTF\Git\ttf\TTF.WebServices\bin\NPOI.OpenXml4Net.xml
+C:\TTF\Git\ttf\TTF.WebServices\obj\Debug\TTF.dll
+C:\TTF\Git\ttf\TTF.WebServices\obj\Debug\TTF.pdb
+C:\TTF\Git\ttf\TTF.WebServices\bin\AWSSDK.dll
+C:\TTF\Git\ttf\TTF.WebServices\bin\AWSSDK.xml
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\TTF.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\TTF.pdb
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\AWSSDK.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\Gma.QrCodeNet.Encoding.Net35.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\ICSharpCode.SharpZipLib.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\Ionic.Zip.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\log4net.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\Newtonsoft.Json.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\NPOI.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\NPOI.OOXML.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\NPOI.OpenXml4Net.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\PushSharp.Apple.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\PushSharp.Core.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\Telerik.Reporting.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\Telerik.ReportViewer.WebForms.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\Telerik.Web.UI.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\Telerik.Web.UI.Skins.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\WebSocket4Net.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\NPOI.OpenXmlFormats.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\AWSSDK.xml
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\Gma.QrCodeNet.Encoding.Net35.xml
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\Newtonsoft.Json.xml
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\NPOI.xml
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\NPOI.OOXML.xml
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\NPOI.OpenXml4Net.xml
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\obj\Debug\TTF.Properties.Resources.resources
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\obj\Debug\TTF.WebServer.csproj.GenerateResource.Cache
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\obj\Debug\TTF.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\obj\Debug\TTF.pdb
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\Microsoft.CSharp.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.Configuration.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.Data.DataSetExtensions.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.Data.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.Data.Entity.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.Data.Services.Client.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.Data.Services.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.DirectoryServices.AccountManagement.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.Drawing.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.EnterpriseServices.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.Runtime.Serialization.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.ServiceModel.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.ServiceModel.Web.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.Web.ApplicationServices.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.Web.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.Web.DynamicData.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.Web.Entity.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.Web.Extensions.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.Web.Services.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.Xml.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\bin\System.Xml.Linq.dll
+C:\TTF\Git\ttf - Testing2\TTF.WebServices\obj\Debug\TTF.WebServer.csprojResolveAssemblyReference.cache
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\TTF.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\TTF.pdb
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\Gma.QrCodeNet.Encoding.Net35.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\ICSharpCode.SharpZipLib.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\Ionic.Zip.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\log4net.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\Microsoft.CSharp.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\Newtonsoft.Json.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\NPOI.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\NPOI.OOXML.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\NPOI.OpenXml4Net.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\PushSharp.Apple.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\PushSharp.Core.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.Configuration.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.Data.DataSetExtensions.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.Data.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.Data.Entity.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.Data.Services.Client.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.Data.Services.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.DirectoryServices.AccountManagement.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.Drawing.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.EnterpriseServices.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.Runtime.Serialization.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.ServiceModel.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.ServiceModel.Web.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.Web.ApplicationServices.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.Web.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.Web.DynamicData.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.Web.Entity.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.Web.Extensions.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.Web.Services.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.Xml.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\System.Xml.Linq.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\Telerik.Reporting.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\Telerik.ReportViewer.WebForms.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\Telerik.Web.UI.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\Telerik.Web.UI.Skins.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\WebSocket4Net.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\NPOI.OpenXmlFormats.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\AWSSDK.xml
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\Gma.QrCodeNet.Encoding.Net35.xml
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\Newtonsoft.Json.xml
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\NPOI.xml
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\NPOI.OOXML.xml
+C:\TTF\Git\ttf - Production\TTF.WebServices\bin\NPOI.OpenXml4Net.xml
+C:\TTF\Git\ttf - Production\TTF.WebServices\obj\Debug\TTF.Properties.Resources.resources
+C:\TTF\Git\ttf - Production\TTF.WebServices\obj\Debug\TTF.WebServer.csproj.GenerateResource.Cache
+C:\TTF\Git\ttf - Production\TTF.WebServices\obj\Debug\TTF.dll
+C:\TTF\Git\ttf - Production\TTF.WebServices\obj\Debug\TTF.pdb
+C:\TTF\Git\ttf - Production\TTF.WebServices\obj\Debug\TTF.WebServer.csprojResolveAssemblyReference.cache

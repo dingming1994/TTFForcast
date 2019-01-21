@@ -1,0 +1,512 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.Text;
+using ATOMS.BusinessLogic;
+using ATOMS.Models;
+using System.ServiceModel.Activation;
+using ATOMS.Utils;
+using System.ServiceModel.Web;
+using ATOMS.Models.ClientDataManager;
+using ATOMS.Models.OperationManagement;
+using System.Globalization;
+
+namespace ATOMS.WebServices
+{
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "ATOMSManpowerPlanning" in code, svc and config file together.
+    [AspNetCompatibilityRequirements(
+        RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+    public class ATOMSOperationManagement : IATOMSOperationManagement
+    {
+        /// <summary>
+        /// Refresh the operation data for a give date
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public void RefreshOperationData(string date)
+        {
+            try
+            {
+                OperationManagementBL.Instance().RefreshOperationData(date);
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+        }
+
+
+        public void GenerateScanDataForSimulation()
+        {
+            try
+            {
+                OperationManagementBL.Instance().GenerateScanDataForSimulation();
+            }
+             catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+        }
+
+
+
+        /// <summary>
+        /// Get the client data manager data for a specific date
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public ClientDataManagerData GetClientDataManagerData()
+        {
+            ClientDataManagerData data = new ClientDataManagerData();
+            try
+            {
+                data=  new ClientDataManagerBL().GetDataManagerData();
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            return data;
+        }
+
+
+        public List<IncomingTrain> GetIncomingTrains(int lineID, int stationID, string time, short nextXMin)
+        {
+            List<IncomingTrain> trains = new List<IncomingTrain>();
+
+            try
+            {
+                DateTime t = DateTime.ParseExact(time, "yyyy-MM-dd hh:mm:ss", CultureInfo.InvariantCulture);
+                trains = (new OperationManagementBL()).GetIncomingTrains(lineID, stationID, t, nextXMin);
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+
+            return trains;
+        }
+
+        #region Daily Operation Management
+        public List<WorkPieceSplitPoint> GetWorkPieceSplitPoints(string workPieceId)
+        {
+            try
+            {
+                return OperationManagementBL.Instance().GetWorkPieceSplitPoints(Convert.ToInt32(workPieceId));
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+
+            return null;
+        }
+
+        public List<DailyActualWorkPiece> GetActualWorkPieces()
+        {
+            try
+            {
+                return OperationManagementBL.Instance().GetActualWorkPieces();
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+
+            return null;
+        }
+
+        public void DeleteActualWorkPiece(int workPieceID)
+        {
+            try
+            {
+                OperationManagementBL.Instance().DeleteActualWorkPiece(workPieceID);
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+        }
+
+        public int InsertActualWorkPiece(DailyActualWorkPiece workPiece)
+        {
+            try
+            {
+                return OperationManagementBL.Instance().InsertActualWorkPiece(workPiece);
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+
+            return -1;
+        }
+
+        public DailyActualWorkPiece GetActualWorkPiece(string workPieceID)
+        {
+            try
+            {
+                return OperationManagementBL.Instance().GetActualWorkPiece(Int32.Parse(workPieceID));
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+
+            return null;
+        }
+
+        public List<DailyPlannedWorkPiece> GetPlannedWorkPieces()
+        {
+            try
+            {
+                return OperationManagementBL.Instance().GetPlannedWorkPieces();
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+
+            return null;
+        }
+
+        public DailyPlannedWorkPiece InsertPlannedWorkPiece(DailyPlannedWorkPiece workPiece)
+        {
+            try
+            {
+                return OperationManagementBL.Instance().InsertPlannedWorkPiece(workPiece);
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+
+            return null;
+        }
+
+        public void DeletePlannedWorkPiece(int workPieceID)
+        {
+            try
+            {
+                OperationManagementBL.Instance().DeletePlannedWorkPiece(workPieceID);
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+        }
+
+        public DailyPlannedWorkPiece GetPlannedWorkPiece(string workPieceID)
+        {
+            try
+            {
+                return OperationManagementBL.Instance().GetPlannedWorkPiece(Int32.Parse(workPieceID));
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+
+            return null;
+        }
+
+ 
+
+        public int GetTrainDeviation()
+        {
+            return new OperationManagementBL().GetTrainDeviation();
+        }
+ 
+        public List<DailyPlannedWorkPiece> GetPlannedWorkPiecesByTrainCaptain(string trainCaptainId)
+        {
+            try
+            {
+                return OperationManagementBL.Instance().GetPlannedWorkPiecesByTrainCaptain(Int32.Parse(trainCaptainId));
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+
+            return null;
+        }
+
+        public DailyPlannedWorkPiece CallBackTrainCaptain(int trainCaptainID, string remarks)
+        {
+            try
+            {
+                return OperationManagementBL.Instance().CallBackTrainCaptain(trainCaptainID, remarks);
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+
+            return null;
+        }
+
+        public int AssignWorkPiece(int trainCapatainID, int workPieceID)
+        {
+            try
+            {
+                return OperationManagementBL.Instance().AssignWorkPiece(trainCapatainID, workPieceID);
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+
+            return -1;
+        }
+
+        public DailyPlannedWorkPiece MergeWorkPieces(int workPieceId1, int workPieceId2)
+        {
+            try
+            {
+                return OperationManagementBL.Instance().MergeWorkPieces(workPieceId1, workPieceId2);
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+
+            return null;
+        }
+
+        public void SwapDutyBetweenTrainCaptain(int trainCaptainId1, int trainCaptainId2)
+        {
+            try
+            {
+                OperationManagementBL.Instance().SwapDutyBetweenTrainCaptain(trainCaptainId1, trainCaptainId2);
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+        }
+
+        public List<DailyPlannedWorkPiece> SplitWorkPiece(int workPieceID, short stationID, short platformID, string time)
+        {
+            try
+            {
+                return OperationManagementBL.Instance().SplitWorkPiece(workPieceID, stationID, platformID , time);
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+
+            return null;
+        }
+
+ 
+        #endregion
+
+        #region Reformation
+
+        public ReformationUIData GetReformationData(int line)
+        {
+            ReformationUIData data = new ReformationUIData();
+            try
+            {
+                data = OperationManagementBL.Instance().GetReformationData(line);
+            }
+            catch (ArgumentException ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.Conflict;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                Logging.log.Error(ex.Message, ex);
+                WebOperationContext ctx = WebOperationContext.Current;
+                ctx.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
+                ctx.OutgoingResponse.StatusDescription = ex.Message;
+            }
+
+            return data;
+        }
+        #endregion
+
+    }
+}

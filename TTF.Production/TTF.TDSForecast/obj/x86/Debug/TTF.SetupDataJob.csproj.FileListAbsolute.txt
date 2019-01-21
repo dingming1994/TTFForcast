@@ -1,0 +1,20 @@
+C:\TTF\Git\ttf\TTF.SetupDataJob\bin\Debug\TTF.SetupDataJob.exe.config
+C:\TTF\Git\ttf\TTF.SetupDataJob\bin\Debug\TTF.SetupDataJob.exe
+C:\TTF\Git\ttf\TTF.SetupDataJob\bin\Debug\TTF.SetupDataJob.pdb
+C:\TTF\Git\ttf\TTF.SetupDataJob\bin\Debug\AWSSDK.dll
+C:\TTF\Git\ttf\TTF.SetupDataJob\bin\Debug\log4net.dll
+C:\TTF\Git\ttf\TTF.SetupDataJob\bin\Debug\Newtonsoft.Json.dll
+C:\TTF\Git\ttf\TTF.SetupDataJob\bin\Debug\AWSSDK.xml
+C:\TTF\Git\ttf\TTF.SetupDataJob\obj\x86\Debug\TTF.SetupDataJob.exe
+C:\TTF\Git\ttf\TTF.SetupDataJob\obj\x86\Debug\TTF.SetupDataJob.pdb
+C:\TTF\Git\ttf\TTF.SetupDataJob\obj\x86\Debug\TTF.SetupDataJob.csprojResolveAssemblyReference.cache
+C:\TTF\Git\ttf - Testing2\TTF.SetupDataJob\bin\Debug\TTF.SetupDataJob.exe.config
+C:\TTF\Git\ttf - Testing2\TTF.SetupDataJob\bin\Debug\TTF.SetupDataJob.exe
+C:\TTF\Git\ttf - Testing2\TTF.SetupDataJob\bin\Debug\TTF.SetupDataJob.pdb
+C:\TTF\Git\ttf - Testing2\TTF.SetupDataJob\bin\Debug\AWSSDK.dll
+C:\TTF\Git\ttf - Testing2\TTF.SetupDataJob\bin\Debug\log4net.dll
+C:\TTF\Git\ttf - Testing2\TTF.SetupDataJob\bin\Debug\Newtonsoft.Json.dll
+C:\TTF\Git\ttf - Testing2\TTF.SetupDataJob\bin\Debug\AWSSDK.xml
+C:\TTF\Git\ttf - Testing2\TTF.SetupDataJob\obj\x86\Debug\TTF.SetupDataJob.exe
+C:\TTF\Git\ttf - Testing2\TTF.SetupDataJob\obj\x86\Debug\TTF.SetupDataJob.pdb
+C:\TTF\Git\ttf - Testing2\TTF.SetupDataJob\obj\x86\Debug\TTF.SetupDataJob.csprojResolveAssemblyReference.cache

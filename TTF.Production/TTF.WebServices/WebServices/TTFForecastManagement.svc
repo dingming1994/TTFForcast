@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="TTF.WebServices.TTFForecastManagement" CodeBehind="TTFForecastManagement.svc.cs" %>
