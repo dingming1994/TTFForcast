@@ -1,0 +1,34 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       [TTFSQL] (Assembly)
+     Create
+       [TTFSQL] (Assembly)
+       [dbo].[GenerateATSSActualTime] (Procedure)
+       [dbo].[RecordATSSSignal] (Procedure)
+       [dbo].[SimulateATSS] (Procedure)
+
+** Supporting actions
+     Drop
+       [dbo].[SimulateTDS] (Procedure)
+       [dbo].[ProcessTDSSignal] (Procedure)
+       [dbo].[RecordTDSSignal] (Procedure)
+       [dbo].[GenerateActualTime] (Procedure)
+       [dbo].[ReprocessATSSLog] (Procedure)
+     Create
+       [dbo].[SimulateTDS] (Procedure)
+       [dbo].[ProcessTDSSignal] (Procedure)
+       [dbo].[RecordTDSSignal] (Procedure)
+       [dbo].[GenerateActualTime] (Procedure)
+
+If this deployment is executed, [dbo].[ReprocessATSSLog] will be dropped and not re-created.
+

@@ -1,0 +1,27 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       [dbo].[SimulateTDS] (Procedure)
+       [dbo].[ProcessTDSSignal] (Procedure)
+       [TTFSQL] (Assembly)
+     Create
+       [TTFSQL] (Assembly)
+       [dbo].[SimulateTDS] (Procedure)
+       [dbo].[ProcessTDSSignal] (Procedure)
+
+** Supporting actions
+     Drop
+       [dbo].[RecordTDSSignal] (Procedure)
+       [dbo].[GenerateActualTime] (Procedure)
+     Create
+       [dbo].[RecordTDSSignal] (Procedure)
+       [dbo].[GenerateActualTime] (Procedure)

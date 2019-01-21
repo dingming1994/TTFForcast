@@ -1,0 +1,14 @@
+C:\TTF\Git\TTFSQL\TTFSQL\bin\Debug\TTFSQL.dacpac
+C:\TTF\Git\TTFSQL\TTFSQL\bin\Debug\TTFSQL.dll
+C:\TTF\Git\TTFSQL\TTFSQL\bin\Debug\TTFSQL.pdb
+C:\TTF\Git\TTFSQL\TTFSQL\obj\Debug\TTFSQL.dll
+C:\TTF\Git\TTFSQL\TTFSQL\obj\Debug\TTFSQL.pdb
+C:\TTF\Git\TTFSQL\TTFSQL\obj\Debug\Model.xml
+C:\TTF\Git\TTFSQL\TTFSQL\obj\Debug\refactor.xml
+C:\TTF\Git\TTFSQL\TTFSQL\obj\Debug\postdeploy.sql
+C:\TTF\Git\TTFSQL\TTFSQL\obj\Debug\predeploy.sql
+C:\Users\Ding Ming\Desktop\TTFSQL\TTFSQL\bin\Debug\TTFSQL.dacpac
+C:\Users\Ding Ming\Desktop\TTFSQL\TTFSQL\bin\Debug\TTFSQL.dll
+C:\Users\Ding Ming\Desktop\TTFSQL\TTFSQL\bin\Debug\TTFSQL.pdb
+C:\Users\Ding Ming\Desktop\TTFSQL\TTFSQL\obj\Debug\TTFSQL.dll
+C:\Users\Ding Ming\Desktop\TTFSQL\TTFSQL\obj\Debug\TTFSQL.pdb
